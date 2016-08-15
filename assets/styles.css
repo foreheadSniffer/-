@@ -189,7 +189,7 @@ hr.after-carousel {
 
 
 .header .menu li {
-  line-height: 44px;
+  line-height: 22px;
 }
 
 .menu li.current {
@@ -244,20 +244,19 @@ ul.nav li {
   border-width: 0 15px 20px 15px;
   border-color: transparent transparent white transparent;
 }
-
 .dropdown.onmouseover:before {
-  content: " ";
-  position: absolute;
-  display: none;
-  bottom: 0px;
-  margin-left: 45px;
-  width: 0px;
-  height: 0px;
-  z-index: 991;
-  /* border-style: solid; */
-  box-shadow: 0px 0px 24px 9px rgba(0, 0, 0, 0.38);
-
+    content: " ";
+    position: absolute;
+    display: none;
+    bottom: 0px;
+    margin-left: 45px;
+    width: 0px;
+    height: 0px;
+    z-index: 991;
+    /* border-style: solid; */
+    box-shadow: 0px 0px 24px 9px rgba(0, 0, 0, 0.38);
 }
+
 
 .dropdown.onmouseover:hover:after,
 .dropdown.onmouseover:hover:before {
@@ -272,7 +271,7 @@ ul.nav li {
   margin: 0;
   text-align: center;
   font-size: 14pt;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.38);
+  box-shadow: 2px 1px 8px 0px rgba(0, 0, 0, 0.28);
   margin: 0 15px;
   background-color: white;
   border-color: white;
@@ -289,6 +288,11 @@ ul.nav li {
   margin: 0 0.5em;
   font-family: "Garamond";
   font-style: italic;
+  font-size: 20px;
+}
+.dropdown-menu .dropdown-fill li:hover {
+  border-bottom: 2px solid #ad2121;
+  color: black;
 }
 
 .header .menu .dropdown-menu .dropdown-fill li > a {
@@ -328,6 +332,10 @@ ul.nav li {
   font-family: "Garamond";
   font-size: 16pt;
   font-style: italic;
+  display: inline-block;
+}
+.login > div {
+    display: inline-block;
 }
 
 .reg-menu .login .settings * {
@@ -340,6 +348,8 @@ ul.nav li {
   font-style: italic;
   margin-right: 0.5em;
   padding-left: 5px;
+  border: none;
+  box-shadow: 2px 1px 8px 0px rgba(0, 0, 0, 0.28);
 }
 
 .reg-menu .login input:focus {
@@ -420,6 +430,7 @@ label.remember {
 
 .header .menu li > a {
   color: #000;
+  font-size: 21px;
 }
 
 .header .menu li.active > a {
@@ -494,6 +505,7 @@ label.remember {
   line-height: 1;
   width: 250px;
   margin: 0 50px;
+  color: black;
 }
 
 .carousel-inner .caption .info p {
@@ -637,9 +649,17 @@ footer > div.col-md-5 {
   font-style: normal;
   color: #888888;
 }
+.sidebar-menu a:hover {
+  text-decoration: none;
+}
 .sidebar-menu > li {
-  text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
+  color: black;
+}
+.sidebar-menu > li.current > a {
+  border-bottom: 2px solid #ad2121;
+  color: black;
+  font-size: 18px;
 }
 .sidebar-menu .sub-list {
   list-style-type: none;
@@ -649,16 +669,24 @@ footer > div.col-md-5 {
   font-size: 14px;
 }
 
+
+
 .sidebar-menu .sub-list li:before {
   content: "-";
   margin-right: 0.5em;
 }
 
+.sidebar-menu .sub-list li a{
+  font-size: 16px;
+}
+
 .sidebar-menu .sub-list li a:hover,
 .sidebar-menu .sub-list li a:focus {
   text-decoration: none;
+  color:  black;s
 }
-.sidebar-menu .active a{
+.sidebar-menu .sub-list .active a,
+.sidebar-menu .sub-list .active a:hover{
   color: #ad2121;
 } 
 /* LOT LIST */
@@ -750,6 +778,9 @@ footer > div.col-md-5 {
 /* Different media */
 
 @media screen and (min-width: 1200px) {
+  .header .menu li > a{
+    font-size: 20px;
+  }
   .carousel .counter {
     top: 20%;
   }
@@ -763,10 +794,17 @@ footer > div.col-md-5 {
 
   .carousel-inner .caption .event-name {
     font-weight: normal;
-    font-size: 24pt;
+    font-size: 47px;
+    margin: 0;
   }
 
-
+  .carousel-inner .caption .info .description{
+     font-size: 24px;
+  }
+  .carousel-inner .caption .info .date, .carousel-inner .caption .info .time{
+    font-size:40px;
+    margin: 0;
+  }
   .carousel-inner .caption .info {
     font-size: 18pt;
     margin-bottom: 0.5em;
@@ -785,13 +823,33 @@ footer > div.col-md-5 {
   .carousel-inner .caption {
     bottom: 0;
     left: 0;
-    width: 60%;
+    width: 100%;
+  }
+  .carousel-inner .caption .event-name{
+    margin:0;
+    font-size: 38px;
+  }
+  .carousel-inner .caption .info .description{
+    font-size: 19px;
+  }
+  .carousel-inner .caption .info .date, .carousel-inner .caption .info .time{
+    font-size: 33px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .header .menu li:first-child a {
     padding-left: 0;
+  }
+  .dropdown.onmouseover:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown.onmouseover:hover:after {
+    display: block;
+  }
+  .dropdown-menu .dropdown-fill li{
+    font-size: 19px;
   }
 }
 
@@ -800,13 +858,6 @@ footer > div.col-md-5 {
     top: 0;
   }
 
-  .dropdown.onmouseover:hover .dropdown-menu {
-    display: none;
-  }
-
-  .dropdown.onmouseover:hover:after {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 991px) {
@@ -831,6 +882,12 @@ footer > div.col-md-5 {
   .vni-menu li a:first-child {
     padding: 0 0 0 6px;
   }
+  .header .menu li > a {
+    font-size: 18px;
+  }
+  .dropdown-menu .dropdown-fill li{
+    font-size: 12px;
+  }
 
   .row div.vni-sub-menu:first-child {
     padding: 0 0 0 15px;
@@ -844,26 +901,33 @@ footer > div.col-md-5 {
 
   .carousel-inner .caption .event-name {
     font-weight: normal;
-    font-size: 16pt;
-    margin: 0.5em 0 0;
+    font-size: 23px;
+    margin: 0; 
   }
 
-  .carousel-inner .caption .description {
+  .carousel-inner .caption .info .description {
     margin: 0;
     height: 1em;
-    width: 100%;
+    width:180px;
     overflow:hidden; 
     white-space:nowrap; 
     text-overflow: ellipsis;
+    font-size: 12px;
   }
 
   .carousel-inner .caption .info {
-    font-size: 12pt;
+    font-size: 20px;
     margin-bottom: 0;
   }
 
   .carousel-inner .caption .catalogue {
     margin: 0;
+  }
+  .dropdown.onmouseover:hover .dropdown-menu{
+    display: none;
+  }
+  .dropdown.onmouseover:hover:after, .dropdown.onmouseover:hover:before{
+    display: none;
   }
 
   .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
