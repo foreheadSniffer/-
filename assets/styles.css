@@ -166,15 +166,15 @@ hr {
   border: 0;
   height: 4px;
   border-style: solid;
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC42NSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1OCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-radial-gradient(top, ellipse cover,  rgba(70,70,70,0.65) 0%, rgba(0,0,0,0) 58%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center top, 0px, center top, 100%, color-stop(0%,rgba(70,70,70,0.65)), color-stop(58%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center top, ellipse cover,  rgba(70,70,70,0.65) 0%,rgba(0,0,0,0) 58%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(top, ellipse cover,  rgba(70,70,70,0.65) 0%,rgba(0,0,0,0) 58%,rgba(0,0,0,0) 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(top, ellipse cover,  rgba(70,70,70,0.65) 0%,rgba(0,0,0,0) 58%,rgba(0,0,0,0) 100%); /* IE10+ */
-  background: radial-gradient(ellipse at top,  rgba(70,70,70,0.65) 0%,rgba(0,0,0,0) 58%,rgba(0,0,0,0) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10000000', endColorstr='#00000000',GradientType=0 ); /* IE6-8 fallback on horizontal gradient */
+  background: rgba(248,80,50,0);
+background: -moz-linear-gradient(left, rgba(248,80,50,0) 0%, rgba(204,58,38,1) 29%, rgba(173,42,30,1) 49%, rgba(199,48,34,1) 72%, rgba(231,56,39,0) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,0)), color-stop(29%, rgba(204,58,38,1)), color-stop(49%, rgba(173,42,30,1)), color-stop(72%, rgba(199,48,34,1)), color-stop(100%, rgba(231,56,39,0)));
+background: -webkit-linear-gradient(left, rgba(248,80,50,0) 0%, rgba(204,58,38,1) 29%, rgba(173,42,30,1) 49%, rgba(199,48,34,1) 72%, rgba(231,56,39,0) 100%);
+background: -o-linear-gradient(left, rgba(248,80,50,0) 0%, rgba(204,58,38,1) 29%, rgba(173,42,30,1) 49%, rgba(199,48,34,1) 72%, rgba(231,56,39,0) 100%);
+background: -ms-linear-gradient(left, rgba(248,80,50,0) 0%, rgba(204,58,38,1) 29%, rgba(173,42,30,1) 49%, rgba(199,48,34,1) 72%, rgba(231,56,39,0) 100%);
+background: linear-gradient(to right, rgba(248,80,50,0) 0%, rgba(204,58,38,1) 29%, rgba(173,42,30,1) 49%, rgba(199,48,34,1) 72%, rgba(231,56,39,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+  
 }
 
 hr.before-carousel {
@@ -495,10 +495,15 @@ label.remember {
 }
 
 .carousel-inner .caption .info {
+  background-image: url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-size: 330px;
+  background-position: right center;
   font-family: "Garamond";
   font-style: italic;
   float: right;
-  font-size: 18px
+  font-size: 18px;
+  line-height: 40px;
 }
 
 .carousel-inner .caption .info .description {
@@ -655,6 +660,8 @@ footer > div.col-md-5 {
 .sidebar-menu > li {
   font-size: 18px;
   color: black;
+  padding-left: 40px;
+
 }
 .sidebar-menu > li.current > a {
   border-bottom: 2px solid #ad2121;
@@ -668,7 +675,15 @@ footer > div.col-md-5 {
   padding: 0;
   font-size: 14px;
 }
-
+.sidebar-menu > li.current {
+  
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: 214px;
+    /* background-position: right center; */
+    line-height: 40px;
+    background-position: 0 5px;
+}
 
 
 .sidebar-menu .sub-list li:before {
@@ -678,6 +693,7 @@ footer > div.col-md-5 {
 
 .sidebar-menu .sub-list li a{
   font-size: 16px;
+
 }
 
 .sidebar-menu .sub-list li a:hover,
