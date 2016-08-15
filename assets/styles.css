@@ -963,6 +963,12 @@ footer > div.col-md-5 {
   text-align: right;
   padding: 10px 20px 10px 30px;
 }
+.auctionForm tr:first-child td{
+  padding-top: 20px;
+}
+.auctionForm tr:last-child td{
+  padding-bottom: 20px;
+}
 
 .auctionFrom__input {
   width: 100%;
