@@ -166,13 +166,13 @@ hr {
   border: 0;
   height: 4px;
   border-style: solid;
-  background: rgba(248,80,50,0);
-background: -moz-linear-gradient(left, rgba(248,80,50,0) 0%, rgba(204,58,38,1) 29%, rgba(173,42,30,1) 49%, rgba(199,48,34,1) 72%, rgba(231,56,39,0) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,0)), color-stop(29%, rgba(204,58,38,1)), color-stop(49%, rgba(173,42,30,1)), color-stop(72%, rgba(199,48,34,1)), color-stop(100%, rgba(231,56,39,0)));
-background: -webkit-linear-gradient(left, rgba(248,80,50,0) 0%, rgba(204,58,38,1) 29%, rgba(173,42,30,1) 49%, rgba(199,48,34,1) 72%, rgba(231,56,39,0) 100%);
-background: -o-linear-gradient(left, rgba(248,80,50,0) 0%, rgba(204,58,38,1) 29%, rgba(173,42,30,1) 49%, rgba(199,48,34,1) 72%, rgba(231,56,39,0) 100%);
-background: -ms-linear-gradient(left, rgba(248,80,50,0) 0%, rgba(204,58,38,1) 29%, rgba(173,42,30,1) 49%, rgba(199,48,34,1) 72%, rgba(231,56,39,0) 100%);
-background: linear-gradient(to right, rgba(248,80,50,0) 0%, rgba(204,58,38,1) 29%, rgba(173,42,30,1) 49%, rgba(199,48,34,1) 72%, rgba(231,56,39,0) 100%);
+background: rgba(248,80,50,0);
+background: -moz-linear-gradient(left, rgba(248,80,50,0) 0%, rgba(213,62,41,1) 23%, rgba(173,42,30,1) 49%, rgba(200,49,34,1) 73%, rgba(231,56,39,0) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,0)), color-stop(23%, rgba(213,62,41,1)), color-stop(49%, rgba(173,42,30,1)), color-stop(73%, rgba(200,49,34,1)), color-stop(100%, rgba(231,56,39,0)));
+background: -webkit-linear-gradient(left, rgba(248,80,50,0) 0%, rgba(213,62,41,1) 23%, rgba(173,42,30,1) 49%, rgba(200,49,34,1) 73%, rgba(231,56,39,0) 100%);
+background: -o-linear-gradient(left, rgba(248,80,50,0) 0%, rgba(213,62,41,1) 23%, rgba(173,42,30,1) 49%, rgba(200,49,34,1) 73%, rgba(231,56,39,0) 100%);
+background: -ms-linear-gradient(left, rgba(248,80,50,0) 0%, rgba(213,62,41,1) 23%, rgba(173,42,30,1) 49%, rgba(200,49,34,1) 73%, rgba(231,56,39,0) 100%);
+background: linear-gradient(to right, rgba(248,80,50,0) 0%, rgba(213,62,41,1) 23%, rgba(173,42,30,1) 49%, rgba(200,49,34,1) 73%, rgba(231,56,39,0) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
   
 }
@@ -226,7 +226,13 @@ ul.nav li {
 .list-inline > li {
   padding: 0;
 }
-
+.dropdown-fill> li:hover {
+  background-image: url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  line-height: 40px;
+}
 .nav-pills > li+li {
   margin: 0;
 }
