@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'GaramondBoldITCItalic';
+    src: url('grd76.eot');
+    src: url('grd76.eot') format('embedded-opentype'),
+         url('grd76.woff') format('woff'),
+         url('grd76.ttf') format('truetype'),
+         url('grd76.svg#GaramondBoldITCItalic') format('svg');
+}

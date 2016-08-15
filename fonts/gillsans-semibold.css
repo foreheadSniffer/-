@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'GillSansSemiBold';
+    src: url('gillsans-semibold.eot');
+    src: url('gillsans-semibold.eot') format('embedded-opentype'),
+         url('gillsans-semibold.woff') format('woff'),
+         url('gillsans-semibold.ttf') format('truetype'),
+         url('gillsans-semibold.svg#GillSansSemiBold') format('svg');
+}

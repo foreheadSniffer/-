@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'GillSansUltraBold';
+    src: url('gillsans-ultrabold.eot');
+    src: url('gillsans-ultrabold.eot') format('embedded-opentype'),
+         url('gillsans-ultrabold.woff') format('woff'),
+         url('gillsans-ultrabold.ttf') format('truetype'),
+         url('gillsans-ultrabold.svg#GillSansUltraBold') format('svg');
+}
