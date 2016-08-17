@@ -164,62 +164,58 @@
       <div class="row">
         <div class="col-md-3"> </div>
         <div class="col-md-7">
-          <table style="margin: 5px 0 0 0;" width="100%" align="center" border="0" cellspacing="0" cellpadding="10" class="auctionForm" auctionform="">
-            <form name="Application" method="POST" action="#form"></form>
-  
-            <tbody>
-              <tr>
-                <td width="30%">Я, ФИО</td>
-                <td width="70%"><input  class="auctionFrom__input" type="text" name="fData[name]" value=""></td>
-              </tr>
+          <div class="auctionForm-wrapper">
+            <form name="Application" method="POST" action="#form">
+              <table style="margin: 5px 0 0 0;" width="100%" align="center" border="0" cellspacing="0" cellpadding="10" class="auctionForm" auctionform="">
+                <tr>
+                  <td width="30%">Я, ФИО</td>
+                  <td width="70%"><input  class="auctionFrom__input" type="text" name="fData[name]" value=""></td>
+                </tr>
 
-              <tr>
-                <td width="30%">заказываю участие в аукционе №</td>
-                <td width="70%"><input class="auctionFrom__input" type="text" name="fData[auc_num]" value=""></td>
-              </tr>
+                <tr>
+                  <td width="30%">заказываю участие в аукционе №</td>
+                  <td width="70%"><input class="auctionFrom__input" type="text" name="fData[auc_num]" value=""></td>
+                </tr>
 
-              <tr>
-                <td width="30%">за лоты №№</td>
-                <td width="70%"><input  class="auctionFrom__input" type="text" name="fData[lot_num]" value=""></td>
-              </tr>
+                <tr>
+                  <td width="30%">за лоты №№</td>
+                  <td width="70%"><input  class="auctionFrom__input" type="text" name="fData[lot_num]" value=""></td>
+                </tr>
 
-              <tr>
-                <td>мой телефон</td>
-                <td><input class="auctionFrom__input" type="text" name="fData[phone]" value=""></td>
-              </tr> 
+                <tr>
+                  <td>мой телефон</td>
+                  <td><input class="auctionFrom__input" type="text" name="fData[phone]" value=""></td>
+                </tr> 
 
-              <tr>
-                <td colspan="2" class="align_left">
-                  Заказывая телефонный звонок для участия в аукционе «Дома антикварной книги в&nbsp;Никитском», я подтверждаю, что ознакомлен с 
-                  <a href="http://www.vnikitskom.ru/antique/auction/rules/" target="_blank">правилами аукционов</a> 
-                  и принимаю их: 
-                  <input type="checkbox" name="fData[rules]" value="Y">
-                </td>
-              </tr>
-    
-      
-              <!-- captcha -->
-              <tr>
-                <td>Анти-спам</td>
-                <td>
-                  <input class="auctionFrom__input" type="text" name="fData[captcha]" class="input_text" value="">
-                  <iframe src="http://www.vnikitskom.ru/antique/inc/_captcha/_iframe.php?bgcolor=#F0F0F0" width="100%" height="53" frameborder="0" style="border: solid 0px;" scrolling="no"></iframe>
-                </td>
-              </tr>
-              <!-- / captcha -->
-                  
-              
-              <tr>
-                <td>&nbsp;</td>
-                <td>
-                  <input type="hidden" name="fData[send]" value="true">
-                  <input class="auctionForm__submit" type="submit" value="Отправить сообщение" class="button" style="WIDTH: 100%; HEIGHT: 30px;">
-                </td>
-              </tr>
-            
-            
-            </tbody>
-          </table>
+                <tr>
+                  <td colspan="2" class="align_left">
+                    Заказывая телефонный звонок для участия в аукционе «Дома антикварной книги в&nbsp;Никитском», я подтверждаю, что ознакомлен с 
+                    <a href="http://www.vnikitskom.ru/antique/auction/rules/" target="_blank">правилами аукционов</a> 
+                    и принимаю их: 
+                    <input type="checkbox" name="fData[rules]" value="Y">
+                  </td>
+                </tr>
+        
+                <!-- captcha -->
+                <tr>
+                  <td>Анти-спам</td>
+                  <td>
+                    <input class="auctionFrom__input" type="text" name="fData[captcha]" class="input_text" value="">
+                    <iframe src="http://www.vnikitskom.ru/antique/inc/_captcha/_iframe.php?bgcolor=#F0F0F0" width="100%" height="53" frameborder="0" style="border: solid 0px;" scrolling="no"></iframe>
+                  </td>
+                </tr>
+                <!-- / captcha -->
+                    
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>
+                    <input type="hidden" name="fData[send]" value="true">
+                    <input class="auctionForm__submit" type="submit" value="Отправить сообщение" class="button" style="WIDTH: 100%; HEIGHT: 30px;">
+                  </td>
+                </tr>  
+              </table>
+            </form>
+          </div>
         </div>
       </div>
     </div>
