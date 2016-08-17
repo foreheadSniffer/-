@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: 'GillSans';
+    font-family: 'GillSans Bold';
     src: url('../fonts/gillsans-bold.eot');
     src: url('../fonts/gillsans-bold.eot?#iefix') format('embedded-opentype'),
          url('../fonts/gillsans-bold.woff') format('woff'),
@@ -22,7 +22,7 @@
 }
 
 @font-face {
-    font-family: 'GillSans';
+    font-family: 'GillSans Bold Italic';
     src: url('../fonts/gillsans-bolditalic.eot');
     src: url('../fonts/gillsans-bolditalic.eot?#iefix') format('embedded-opentype'),
          url('../fonts/gillsans-bolditalic.woff') format('woff'),
@@ -33,7 +33,7 @@
 }
 
 @font-face {
-    font-family: 'GillSans';
+    font-family: 'GillSans Italic';
     src: url('../fonts/gillsans-italic.eot');
     src: url('../fonts/gillsans-italic.eot?#iefix') format('embedded-opentype'),
          url('../fonts/gillsans-italic.woff') format('woff'),
@@ -44,7 +44,7 @@
 }
 
 @font-face {
-    font-family: 'GillSans';
+    font-family: 'GillSans Light';
     src: url('../fonts/gillsans-light.eot');
     src: url('../fonts/gillsans-light.eot?#iefix') format('embedded-opentype'),
          url('../fonts/gillsans-light.woff') format('woff'),
@@ -55,46 +55,13 @@
 }
 
 @font-face {
-    font-family: 'GillSans';
-    src: url('../fonts/gillsans-lightitalic.eot');
-    src: url('../fonts/gillsans-lightitalic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/gillsans-lightitalic.woff') format('woff'),
-         url('../fonts/gillsans-lightitalic.ttf') format('truetype'),
-         url('../fonts/gillsans-lightitalic.svg') format('svg');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GillSans';
+    font-family: 'GillSans Semi';
     src: url('../fonts/gillsans-semibold.eot');
     src: url('../fonts/gillsans-semibold.eot?#iefix') format('embedded-opentype'),
          url('../fonts/gillsans-semibold.woff') format('woff'),
          url('../fonts/gillsans-semibold.ttf') format('truetype'),
          url('../fonts/gillsans-semibold.svg') format('svg');
     font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GillSans';
-    src: url('../fonts/gillsans-semibolditalic.eot');
-    src: url('../fonts/gillsans-semibolditalic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/gillsans-semibolditalic.woff') format('woff'),
-         url('../fonts/gillsans-semibolditalic.ttf') format('truetype'),
-         url('../fonts/gillsans-semibolditalic.svg') format('svg');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'GillSans';
-    src: url('../fonts/gillsans-ultrabold.eot');
-    src: url('../fonts/gillsans-ultrabold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/gillsans-ultrabold.woff') format('woff'),
-         url('../fonts/gillsans-ultrabold.ttf') format('truetype'),
-         url('../fonts/gillsans-ultrabold.svg') format('svg');
-    font-weight: 900;
     font-style: normal;
 }
 
@@ -150,7 +117,7 @@ body,
 
 body {
   padding-top: 30px;
-  font-family: "Futura CEZ Demi";
+  font-family: "GillSans";
   font-size: 16px;
 }
 
@@ -335,7 +302,7 @@ ul.nav li {
 
 .reg-menu .signup h2,
 .reg-menu .login h2 {
-  font-family: "Garamond";
+  font-family: "GillSans";
   font-size: 16pt;
   font-style: italic;
   display: inline-block;
@@ -371,7 +338,7 @@ ul.nav li {
   cursor: default;
   margin-right: 0.25em;
   font-size: 2em;
-  font-family: sans-serif;
+  font-family: 'GillSans', sans-serif;
 }
 
 .reg-menu .login .forgot {
@@ -505,7 +472,7 @@ label.remember {
   background-repeat: no-repeat;
   background-size: 330px;
   background-position: right center;
-  font-family: "Garamond";
+  font-family: "GillSans";
   font-style: italic;
   float: right;
   font-size: 18px;
@@ -513,6 +480,7 @@ label.remember {
 }
 
 .carousel-inner .caption .info .description {
+  font-family: 'GillSans Light';
   line-height: 1;
   width: 250px;
   margin: 0 50px;
